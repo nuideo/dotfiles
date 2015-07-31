@@ -1,3 +1,5 @@
+"from: https://github.com/frank604/dotfiles/blob/master/.vimrc
+
 set t_Co=16
 call pathogen#infect()
 syntax on
