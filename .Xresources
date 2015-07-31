@@ -1,0 +1,128 @@
+!!fix vim
+URxvt.intensityStyles: false
+
+
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 110
+
+URxvt.scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+
+!! scrollback buffer
+URxvt.secondaryScreen:  1
+URxvt.secondaryScroll:  0
+URxvt.secondaryWheel:   1
+
+
+!-- Xft settings -- !
+Xft.dpi:        96
+!!Xft.dpi:    72
+Xft.rgba:       rgb
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    1
+Xft.antialias:  1
+
+!! Font
+URxvt.font: xft:terminus:medium:size=20
+URxvt.boldFont:xft:terminus:medium:size=20
+
+URxvt.letterSpace: -1
+
+URxvt*termName:         rxvt
+
+!! copy paste
+URxvt*clipboard.copycmd:    xclip -i -selection clipboard
+URxvt*clipboard.pastecmd:   xclip -o -selection clipboard
+
+#define S_base03        #002b36
+#define S_base04        #00171d
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #c1cacd
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+#define S_green_2       #17F018
+
+
+!!*background:            S_base04
+URxvt*background:       S_base04
+URxvt*foreground:           S_green_2
+!!URxvt*depth:                 32
+URxvt*cursorColor:           S_base1
+URxvt*pointerColorBackground:S_base01
+URxvt*pointerColorForeground:S_base1
+
+!!URxvt*color0: black
+!!URxvt*color1: red3
+!!URxvt*color2: green3
+!!URxvt*color3: yellow3
+!!URxvt*color4: blue2
+!!URxvt*color5: magenta3
+!!URxvt*color6: cyan3
+!!URxvt*color7: gray90
+!!URxvt*color8: grey50
+!!URxvt*color9: red
+!!URxvt*color10: green
+!!URxvt*color11: yellow
+!!URxvt*color12: blue
+!!URxvt*color13: magenta
+!!URxvt*color14: cyan
+!!URxvt*color15: white
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+
+URxvt*utf8:                  1
+URxvt*saveLines:             999999
+
